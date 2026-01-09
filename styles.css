@@ -1,0 +1,8 @@
+.top-bar {
+  background: #48abdc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 40px;
+  font-size: 14px;
+}
