@@ -6,3 +6,60 @@
   padding: 8px 40px;
   font-size: 14px;
 }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.main-header {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Partie contact */
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.header-contact .contact-info {
+  display: flex;
+  gap: 30px;
+}
+
+.header-contact .contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Menu + bouton */
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.header-menu nav a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-devis {
+  background: #ffd000;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
