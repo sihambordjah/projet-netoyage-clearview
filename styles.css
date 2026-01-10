@@ -1,21 +1,35 @@
+/*style generale*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+/*-----------------*/
 .top-bar {
-  background: #48abdc;
+  background: #1fa3d6;
   color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 8px 40px;
   font-size: 14px;
 }
-.header {
+/*.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
   background: #fff;
-}
+}*/
 
 .main-header {
   background: #fff;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e5e5;
@@ -26,22 +40,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
 }
-
+/* Logo */
+.logo {
+  width: 180px; /* taille idéale pour ton header */
+  height: auto;
+}
+/* Zone contact */
 .header-contact .contact-info {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
+/* Lien contact */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-item:hover strong {
+  color: #1fa3d6;
+}
+.header-contact .contact-info .flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+/*
 .header-contact .contact-info div {
   display: flex;
   align-items: center;
   gap: 8px;
+}*/
+
+/* Icônes */
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1fa3d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon i {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Small text */
+small {
+  font-size: 14px;
+  color: #666;
 }
 
 /* Menu + bouton */
 .header-menu {
+  background: #f5f5f7;
   display: flex;
   justify-content: space-between;
   align-items: center;

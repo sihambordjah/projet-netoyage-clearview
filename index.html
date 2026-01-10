@@ -81,6 +81,10 @@
   ========================== -->
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- =========================
        PERFORMANCE
@@ -141,24 +145,29 @@
     <header class="main-header">
       <!-- Partie contact -->
       <div class="header-contact">
-        <div class="logo">
-          <img src="images/logo-clearview.jpg" alt="Logo Société" />
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="ClearView Nettoyage" class="logo" />
+          </a>
         </div>
         <div class="contact-info">
-          <div class="phone">
-            <span>📞</span>
-            <div>
+          <!-- Téléphone -->
+          <a href="tel:0771863356" class="contact-item">
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <div class="flex-column">
               <small>Appelez-nous</small>
               <strong>07 71 86 33 56</strong>
             </div>
-          </div>
-          <div class="email">
-            <span>✉️</span>
-            <div>
+          </a>
+          <!-- Email -->
+          <a href="mailto:contact@clearview-nettoyage.fr" class="contact-item">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <div class="flex-column">
               <small>Écrivez-nous</small>
-              <strong>giveawaygiftuk@gmail.com</strong>
+              <strong>contact@clearview-nettoyage.fr</strong>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -174,7 +183,7 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section 
     <section class="hero">
       <div class="hero-text">
         <span>Entreprise de nettoyage à Paris & IDF</span>
@@ -192,7 +201,7 @@
       <div class="hero-image">
         <img src="cleaning.jpg" alt="Nettoyage professionnel" />
       </div>
-    </section>
+    </section>-->
 
     <!-- Pourquoi nous choisir -->
     <section class="features"></section>
