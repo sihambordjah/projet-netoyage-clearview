@@ -5,20 +5,35 @@
 html {
   scroll-behavior: smooth;
 }
-body {
+* {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 /*-----------------*/
 .top-bar {
-  background: #1fa3d6;
-  color: #fff;
+  background-color: #1fa3d6;
+  color: white;
+  padding: 10px 80px;
   display: flex;
   justify-content: space-between;
-  padding: 8px 40px;
-  font-size: 14px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
 }
+
+.top-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-item i {
+  font-size: 16px;
+  color: white;
+}
+
 /*.header {
   display: flex;
   align-items: center;
@@ -29,7 +44,7 @@ body {
 
 .main-header {
   background: #fff;
-  padding: 20px 40px;
+  padding: 0px; /* ⬅️ hauteur réduite */
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e5e5;
@@ -40,16 +55,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2px 60px; /* ⬅️ hauteur réduite */
 }
 /* Logo */
 .logo {
-  width: 180px; /* taille idéale pour ton header */
+  width: 130px; /* taille idéale pour ton header */
   height: auto;
 }
+
 /* Zone contact */
 .header-contact .contact-info {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 /* Lien contact */
@@ -79,8 +96,8 @@ body {
 
 /* Icônes */
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #1fa3d6;
   display: flex;
@@ -94,7 +111,7 @@ body {
 
 /* Small text */
 small {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
 }
 
