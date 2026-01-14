@@ -190,45 +190,156 @@
           <a href="#">Nos Services</a>
           <a href="#">Nos Réalisations</a>
         </nav>
-        <a class="btn-devis" href="#">Devis Gratuit</a>
+
+        <a href="#" class="btn">Demander un devis</a>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-image">
-        <div class="circle">
-          <img src="bureau.jpg" alt="Bureau professionnel" />
-          <span class="arc blue"></span>
-          <span class="arc green"></span>
+      <div class="hero-container">
+        <div class="hero-image">
+          <div class="circle-wrapper">
+            <!-- SVG arcs -->
+            <svg class="circle-arcs" viewBox="0 0 420 420">
+              <!-- arc bleu -->
+              <circle
+                cx="210"
+                cy="210"
+                r="200"
+                fill="none"
+                stroke="#1fa3d6"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-dasharray="500 900"
+                stroke-dashoffset="0"
+              />
+
+              <!-- arc vert -->
+              <circle
+                cx="210"
+                cy="210"
+                r="200"
+                fill="none"
+                stroke="#ac7bb2"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-dasharray="280 1000"
+                stroke-dashoffset="-940"
+              />
+            </svg>
+
+            <!-- image -->
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+              alt="Bureau"
+            />
+          </div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="hero-content">
+          <h1>
+            Le prestataire de nettoyage professionnel au service des
+            <span>valeurs de votre entreprise</span>
+          </h1>
+
+          <p class="subtitle">
+            <strong>
+              Choisir ClearView, c'est faire vivre concrètement les valeurs qui
+              comptent pour votre entreprise.</strong
+            >
+          </p>
+
+          <p class="text">
+            En tant qu'entreprise de nettoyage professionnel, ClearView
+            accompagne les entreprises exigeantes dans l'entretien régulier de
+            leurs espaces de travail. Nous proposons des prestations récurrentes
+            et sur mesure pour des surfaces supérieures à 500 m², à Angoulins,
+            La Rochelle et dans l'agglomération rochelaise. Grâce à des équipes
+            qualifiées, des méthodes rigoureuses et un suivi constant, nous
+            garantissons des environnements propres, sains et valorisants, à
+            l'image de votre entreprise.
+          </p>
+
+          <a href="#" class="btn">Demander un devis →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Témoignage Client -->
+    <section class="testimonials">
+      <div class="carousel">
+        <div class="track">
+          <div class="slide">
+            <div class="card">
+              <h3>Témoignage de Priscillia Bidault</h3>
+              <p class="quote">
+                « Super travail.resultats au top.personnel disponible cordial.
+                Je recommande a 100%. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+            <div class="card">
+              <h3>Témoignage de Patrick Prod'homme</h3>
+              <p class="quote">
+                « Mustapha et sa compagne son supers ils interviennent
+                régulièrement pour moi pour ma maison je les recommande. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="card">
+              <h3>Témoignage Client Sandrine Cartofili</h3>
+              <p class="quote">
+                « J'utilise ses services depuis longtemps. À recommander. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="card">
+              <h3>Témoignage Client Christelle Schwartz</h3>
+              <p class="quote">
+                « Utilisation du nettoyeur vapeur, parfait. Souplesse et
+                réactivité. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="card">
+              <h3>Témoignage Client Mylène Prod'homme</h3>
+              <p class="quote">
+                « Nous confions a ClearView Nettoyage le ménage de nos
+                appartements en Airbnb. Nous sommes très contents de la qualité
+                de leur travail. Nous les recommandons. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="card">
+              <h3>Témoignage Client Rebecca Maraton</h3>
+              <p class="quote">
+                « Très bon travail voiture et canapé comme neuf c’est un très
+                gentil monsieur. »
+              </p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="hero-content">
-        <h1>
-          Le prestataire de nettoyage professionnel au service des
-          <span>valeurs de votre entreprise</span>
-        </h1>
-
-        <p class="subtitle">
-          Choisir ClearView, c'est faire vivre concrètement les valeurs qui
-          comptent pour votre entreprise.
-        </p>
-
-        <p>
-          En tant qu'entreprise de nettoyage professionnel, ClearView accompagne
-          les entreprises exigeantes dans l'entretien régulier de leurs espaces
-          de travail. Nous proposons des prestations récurrentes et sur mesure
-          pour des surfaces supérieures à 500 m², à Angoulins, La Rochelle et
-          dans l'agglomération rochelaise. Grâce à des équipes qualifiées, des
-          méthodes rigoureuses et un suivi constant, nous garantissons des
-          environnements propres, sains et valorisants, à l'image de votre
-          entreprise.
-        </p>
-
-        <a href="#" class="btn">Demander un devis →</a>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </section>
+
+    <script src="script.js"></script>
 
     <!-- Pourquoi nous choisir -->
     <section class="features"></section>
