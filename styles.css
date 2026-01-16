@@ -235,7 +235,7 @@ small {
   display: block;
   margin-top: 10px;
   font-weight: 800;
-  color: #1fa3d6;
+  color: #0b2f5b;
   position: relative;
 }
 
@@ -246,7 +246,7 @@ small {
   left: 0;
   width: 100%;
   height: 3px;
-  background: #ac7bb2;
+  background: #a56fc0;
 }
 
 .subtitle {
@@ -289,7 +289,7 @@ small {
   }
 }
 
-/*separateur chevron*/
+/*separateur*/
 .separator-section {
   background-color: #eaf6fb; /* EXACTEMENT la même couleur */
   display: flex;
@@ -323,13 +323,11 @@ small {
 
   font-family: Arial, sans-serif;
 }
-
 .services .container {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
-
 .services h2 {
   font-size: 2rem;
   color: #0074b7; /* bleu clair comme sur ton screenshot */
@@ -388,7 +386,7 @@ small {
   top: 0;
   height: 100%;
   width: 6px;
-  background: #bb86c1;
+  background: #a56fc0;
   border-radius: 12px 0 0 12px;
 }
 
