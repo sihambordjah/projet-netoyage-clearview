@@ -14,7 +14,7 @@ html {
 
 /*-----------------*/
 .top-bar {
-  background-color: #1fa3d6;
+  background-color: #0074b7;
   color: white;
   padding: 10px 60px;
   display: flex;
@@ -95,7 +95,7 @@ html {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #1fa3d6;
+  background-color: #0074b7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,7 @@ small {
   font-weight: bold;
 }
 .header-menu nav a:hover {
-  color: #1fa3d6;
+  color: #0074b7;
 }
 /*
 .btn-devis {
@@ -142,24 +142,24 @@ small {
 /* BOUTON */
 .btn {
   display: inline-block;
-  background: #bb86c1;
+  background: #a56fc0;
   color: #000;
-  padding: 14px 28px;
-  border-radius: 20px;
+  padding: 14px 35px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
   transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: #905f96;
+  background: #8f58a5;
 }
 
 /*Hero*/
 .hero {
   background-color: #eaf6fb;
-
-  padding: 80px 15%;
+  padding: 80px 15% 50px 15%;
 }
 
 .hero-container {
@@ -235,7 +235,7 @@ small {
   display: block;
   margin-top: 10px;
   font-weight: 800;
-  color: #0b2f5b;
+  color: #1fa3d6;
   position: relative;
 }
 
@@ -257,7 +257,7 @@ small {
 
 .text {
   margin: 20px 0 35px;
-  color: #4a5d73;
+  color: #333333;
   line-height: 1.6;
 }
 
@@ -289,9 +289,69 @@ small {
   }
 }
 
+/*separateur chevron*/
+.separator-section {
+  background-color: #eaf6fb; /* EXACTEMENT la même couleur */
+  display: flex;
+  justify-content: center;
+}
+
+/* Ligne */
+.separator-line {
+  width: 200px;
+  height: 2px;
+  background-color: #1fa3d6; /* bleu principal */
+  position: relative;
+}
+
+/* Point central */
+.separator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #a56fc0; /* violet accent */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*services de nettoyage*/
+.services {
+  background-color: #eaf4fc;
+  padding: 90px 20px;
+
+  font-family: Arial, sans-serif;
+}
+
+.services .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #0074b7; /* bleu clair comme sur ton screenshot */
+  margin-bottom: 25px;
+}
+
+.services p {
+  font-size: 1rem;
+  color: #1f2937; /* gris foncé pour le texte */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.services .cta {
+  margin-top: 40px;
+}
+.services .cta a {
+  margin: 0 10px;
+}
+
 /*Temoignage client*/
 .testimonials {
-  background-color: #2fafd8; /* au lieu d’un bleu plus foncé */
+  background-color: #3da1d6; /* #1fa3d6; au lieu d’un bleu plus foncé */
   padding: 80px 0;
 }
 
