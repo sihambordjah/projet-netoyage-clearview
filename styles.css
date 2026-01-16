@@ -260,6 +260,42 @@ small {
   color: #333333;
   line-height: 1.6;
 }
+/*bouton fiche google*/
+.bouton {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+.google-reviews-btn {
+  display: inline-block;
+  gap: 10px;
+  padding: 20px 10px;
+  border: 1px solid #d8d8db; /* vert */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.google-reviews-btn span {
+  margin-right: 5px;
+}
+a .stars {
+  color: #f4b400; /* jaune Google */
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.reviews-text {
+  font-size: 15px;
+}
+
+.google-logo {
+  font-weight: 700;
+  color: #0074b7; /* bleu Google */
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -346,10 +382,17 @@ small {
 .services .cta a {
   margin: 0 10px;
 }
+/* BOUTON */
+.services .cta .btn {
+  width: 45%;
+}
 
 /*Temoignage client*/
 .testimonials {
-  background-color: #3da1d6; /* #1fa3d6; au lieu d’un bleu plus foncé */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3da1d6; /* #3da1d6; au lieu d’un bleu plus foncé */
   padding: 80px 0;
 }
 
@@ -399,13 +442,14 @@ h3 {
 }
 
 .stars {
-  color: #2a6fd6;
+  color: #0074b7;
   font-size: 20px;
   margin-top: 15px;
 }
 .dots {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .dot {
