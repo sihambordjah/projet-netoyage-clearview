@@ -5,6 +5,10 @@
 /* =====================
    BASE
 ===================== */
+/** {
+  outline: 1px solid red;
+}*/
+
 *,
 *::before,
 *::after {
@@ -13,6 +17,8 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
 }
@@ -156,9 +162,9 @@ small {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row-reverse;
-  padding: 15px 15%;
+  padding: 15px 0;
 }
 .nav-menu {
   display: flex;
@@ -269,18 +275,24 @@ small {
   }
 }
 
+/*les base pour chaque section*/
+section {
+  width: 100%;
+}
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* =====================
    HERO
 ===================== */
-
 .hero {
   background-color: #eaf6fb;
   padding: 60px 9%;
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -489,41 +501,49 @@ a .stars {
   transform: translate(-50%, -50%);
 }
 
-/*services de nettoyage*/
+/*  =================
+services de nettoyage
+====================*/
 .services {
   background-color: #eaf4fc;
   padding: 90px 20px;
+}
 
-  font-family: Arial, sans-serif;
-}
-.services .container {
-  max-width: 1100px;
-  margin: 0 auto;
+.services-container {
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .services h2 {
   font-size: 2rem;
-  color: #0074b7; /* bleu clair comme sur ton screenshot */
+  color: #0074b7;
   margin-bottom: 25px;
 }
+
 .services p {
   font-size: 1.06rem;
-  color: #1f2937; /* gris foncé pour le texte */
+  color: #1f2937;
   line-height: 1.8;
   margin-bottom: 20px;
 }
+
 .services .cta {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
-.services .cta a {
-  margin: 0 10px;
-}
-/* BOUTON */
+
 .services .cta .btn {
-  width: 45%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
 }
-/* RESPONSIVE SERVICE TABLETTE*/
+
+/* RESPONSIVE SERVICES PAERIE CONTENT TABLETTE*/
 @media (max-width: 1024px) {
   .services .cta {
     display: flex;
@@ -534,12 +554,105 @@ a .stars {
     width: 100%;
   }
 }
-/* RESPONSIVE HERO MOBILE*/
+/* RESPONSIVE SERVICES MOBILE*/
 @media (max-width: 768px) {
   .services .cta .btn-responsive {
     display: none;
   }
 }
+
+.targets-services {
+  padding: 60px 20px;
+  text-align: center;
+}
+/* Titre micro-section */
+.services-subtitle {
+  font-size: 22px;
+  color: #6b4eff; /* violet principal */
+  font-weight: 600;
+  margin: 40px 0 30px;
+  position: relative;
+}
+
+.services-subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #6b4eff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.cards-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card-service {
+  max-width: 350px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-service .card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f3efff;
+  color: #3e8cdb;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.card-service p {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.card-service .arrow {
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.icon-service {
+  width: 34px;
+  height: 34px;
+  color: #0074b7;
+}
+
+.card-service p {
+  margin-top: 20px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .cards-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-services {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*Temoignage client*/
 .testimonials {
   display: flex;
@@ -670,14 +783,14 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  flex: 0 0 220px; /* largeur fixe */
+  flex: 0 0 320px; /* largeur fixe */
 }
 
 .footer-logo img {
   max-width: 140px;
   margin-right: 20px;
-  border-radius: 6px;
-  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .footer-block h4 {
@@ -783,11 +896,22 @@ h3 {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 50px;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 20px;
+  }
+
+  /*bloc logo + adresse*/
+  .footer-logo {
+    flex-direction: column;
+    flex: 0 0 0; /* largeur fixe */
   }
 
   .footer-copy {
