@@ -175,6 +175,39 @@ small {
 .nav-link:hover {
   color: #0074b7;
 }
+/* Sous-menu */
+.submenu {
+  display: none; /* caché par défaut */
+  position: absolute;
+  top: 100%; /* juste sous le lien parent */
+  left: 0;
+  background-color: #0074b7;
+  color: #fff;
+  border-radius: 6px;
+  list-style: none;
+  padding: 10px 10px;
+  margin: 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+.nav-menu > li {
+  position: relative;
+}
+.submenu li a {
+  margin: 15px 0;
+  width: 100%;
+  background-color: red;
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* Optionnel : effet hover pour sous-menu */
+.submenu li a:hover {
+  background: #555;
+}
 
 /* BOUTON */
 .btn {
