@@ -568,7 +568,7 @@ services de nettoyage
 /* Titre micro-section */
 .services-subtitle {
   font-size: 22px;
-  color: #6b4eff; /* violet principal */
+  color: #0074b7; /* violet principal */
   font-weight: 600;
   margin: 40px 0 30px;
   position: relative;
@@ -756,6 +756,103 @@ h3 {
 
   .card {
     width: 100%;
+  }
+}
+/* =================
+Formulaire de contact
+====================*/
+
+.devis-section {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.devis-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #444;
+}
+
+.devis-info h2 {
+  color: #0074b7;
+  font-size: 36px;
+  margin: 10px 0 40px;
+}
+
+.bloc-info {
+  margin-bottom: 30px;
+}
+
+.bloc-info h4 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.devis-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.field label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+  padding: 12px;
+  border: 1px solid #222;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+/*
+button {
+  padding: 14px 30px;
+  border: 2px solid #2c4a7a;
+  background: transparent;
+  color: #333;
+  font-weight: bold;
+  cursor: not-allowed;
+  transition: 0.3s;
+}
+
+button.active {
+  cursor: pointer;
+}
+
+button.active:hover {
+  background: #2c4a7a;
+  color: #fff;
+}*/
+
+/* Responsive */
+@media (max-width: 900px) {
+  .devis-container {
+    grid-template-columns: 1fr;
   }
 }
 

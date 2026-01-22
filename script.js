@@ -45,3 +45,26 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
     navMenu.classList.remove("active");
   });
 });*/
+
+/**Formulaire de contact */
+const checkbox = document.getElementById("conditions");
+const submitBtn = document.getElementById("submitBtn");
+const form = document.getElementById("devisForm");
+
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked) {
+    submitBtn.disabled = false;
+    submitBtn.classList.add("active");
+  } else {
+    submitBtn.disabled = true;
+    submitBtn.classList.remove("active");
+  }
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Votre demande de devis a bien été envoyée !");
+  form.reset();
+  submitBtn.disabled = true;
+  submitBtn.classList.remove("active");
+});

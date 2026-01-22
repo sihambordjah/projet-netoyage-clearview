@@ -548,6 +548,73 @@
         <span class="google-logo">Google</span>
       </a>
     </section>
+    <!-- ============= 
+ formulaire de contact
+   =============== -->
+    <section class="devis-section">
+      <div class="devis-container">
+        <!-- Colonne gauche -->
+        <div class="devis-info">
+          <p class="subtitle">Devis gratuit sous 24h !</p>
+          <h2>DEMANDER UN DEVIS</h2>
+
+          <div class="bloc-info">
+            <p>
+              Pour toute question ou pour l'étude de votre situation, notre
+              équipe est à votre écoute. Contactez-nous par téléphone ou via le
+              formulaire ci-contre.
+            </p>
+          </div>
+
+          <div class="bloc-info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i> 22 Rue des Tamaris, 17690
+              Angoulins
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:0148093369">07 71 86 33 56</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <form class="devis-form" id="devisForm">
+          <div class="row">
+            <div class="field">
+              <label>Votre nom et prénom *</label>
+              <input type="text" required />
+            </div>
+            <div class="field">
+              <label>Votre email *</label>
+              <input type="email" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Votre numéro *</label>
+            <input type="tel" required />
+          </div>
+
+          <div class="field">
+            <label>Précisez votre demande *</label>
+            <textarea required></textarea>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="conditions" />
+            <label for="conditions">
+              En cochant cette case, je confirme avoir pris connaissance des
+              conditions d'utilisation
+            </label>
+          </div>
+
+          <button type="submit" class="btn" id="submitBtn" disabled>
+            ENVOYER
+          </button>
+        </form>
+      </div>
+    </section>
 
     <!--footer-->
     <footer class="footer">
