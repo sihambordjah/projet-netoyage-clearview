@@ -1,13 +1,4 @@
-/*style generale
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
-*/
-/* =====================
-   BASE
-===================== */
-/** {
-  outline: 1px solid red;
-}*/
+/*   =======  style generale  ===========  */
 
 *,
 *::before,
@@ -36,9 +27,16 @@ a {
   color: #000;
   text-decoration: none;
 }
-/* =====================
-   TOP BAR
-===================== */
+section {
+  width: 100%;
+  background-color: #eaf6fb;
+}
+section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* ========  TOP BAR  ========  */
 
 .top-bar {
   background-color: #0074b7;
@@ -74,9 +72,7 @@ a {
     margin-bottom: 7px;
   }
 }
-/* =====================
-   HEADER PRINCIPAL
-===================== */
+/* ==========   HEADER PRINCIPAL  ======== */
 
 .main-header {
   background: #fff;
@@ -184,18 +180,21 @@ small {
 .btn {
   display: inline-block;
   background: #a56fc0;
-  color: #000;
+  color: #fff;
   padding: 12px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
+  text-align: center;
   transition: background 0.3s ease;
 }
 
 .btn:hover {
   background: #8f58a5;
+  transform: translateY(-2px);
 }
+
 /*MENU HAMBURGER*/
 .hamburger {
   display: none;
@@ -275,20 +274,10 @@ small {
   }
 }
 
-/*les base pour chaque section*/
-section {
-  width: 100%;
-}
-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 /* =====================
    HERO
 ===================== */
 .hero {
-  background-color: #eaf6fb;
   padding: 60px 9%;
 }
 
@@ -505,7 +494,6 @@ a .stars {
 services de nettoyage
 ====================*/
 .services {
-  background-color: #eaf4fc;
   padding: 90px 20px;
 }
 
@@ -655,13 +643,15 @@ services de nettoyage
 
 /*Temoignage client*/
 .testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #3da1d6; /* #3da1d6; au lieu d’un bleu plus foncé */
+  background-color: #0074b7; /* #3da1d6; au lieu d’un bleu plus foncé */
   border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   padding: 80px 0;
   margin-bottom: 60px;
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel {
@@ -762,15 +752,15 @@ h3 {
 Formulaire de contact
 ====================*/
 
-.devis-section {
-  padding: 80px 10%;
+.devis {
+  padding: 80px 20px;
   background: #fff;
 }
 
 .devis-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: start;
 }
 
@@ -829,30 +819,56 @@ textarea {
   font-size: 13px;
   margin-bottom: 30px;
 }
-/*
-button {
-  padding: 14px 30px;
-  border: 2px solid #2c4a7a;
-  background: transparent;
-  color: #333;
-  font-weight: bold;
-  cursor: not-allowed;
+/*boutton
+.devis-form button {
   transition: 0.3s;
 }
-
-button.active {
-  cursor: pointer;
-}
-
-button.active:hover {
-  background: #2c4a7a;
-  color: #fff;
+.devis-form button:hover {
+  transform: translateY(-2px);
 }*/
 
 /* Responsive */
-@media (max-width: 900px) {
+/*responsive tablette*/
+@media (max-width: 1024px) {
   .devis-container {
     grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .devis-info {
+    max-width: 600px;
+  }
+
+  .devis-info h2 {
+    font-size: 32px;
+  }
+}
+/*responsive mobile*/
+@media (max-width: 768px) {
+  .devis {
+    padding: 60px 15px;
+  }
+
+  .devis-info h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .devis-form .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 16px; /* meilleur clavier mobile */
+  }
+
+  .checkbox {
+    align-items: flex-start;
+  }
+  .devis-form button {
+    width: 100%;
   }
 }
 
@@ -1012,6 +1028,6 @@ button.active:hover {
   }
 
   .footer-copy {
-    text-align: center;
+    justify-content: center;
   }
 }
