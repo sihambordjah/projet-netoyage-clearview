@@ -153,59 +153,103 @@ small {
 /* Partie Menu + bouton */
 .header-menu {
   background: #f5f5f7;
-}
-
+} /*
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
   padding: 15px 0;
-}
-.nav-menu {
+}*/
+/* NAV GLOBAL */
+.nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 60px;
-}
-.nav-link {
-  transition: 0.7s ease;
-  font-weight: 600;
-}
-.nav-link:hover {
-  color: #0074b7;
-}
-/* Sous-menu */
-.submenu {
-  display: none; /* caché par défaut */
-  position: absolute;
-  top: 100%; /* juste sous le lien parent */
-  left: 0;
-  background-color: #0074b7;
-  color: #fff;
-  border-radius: 6px;
-  list-style: none;
-  padding: 10px 10px;
-  margin: 0;
-  min-width: 200px;
-  z-index: 1000;
-}
-.nav-menu > li {
-  position: relative;
-}
-.submenu li a {
-  margin: 15px 0;
-  width: 100%;
+  padding: 12px 0;
 }
 
-/* Afficher le sous-menu au survol */
+/* MENU PRINCIPAL */
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  position: relative; /* OBLIGATOIRE pour le dropdown */
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Hover lien principal */
+.menu a:hover {
+  /*background: #444;*/
+  color: #0074b7;
+}
+
+/* FLÈCHE AUTOMATIQUE */
+.dropdown > a::after {
+  content: " ▼";
+  font-size: 0.7em;
+}
+/*Soulignement uniquement pour le menu principal
+.menu > li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.menu > li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 0;
+  height: 2px;
+  background: #0074b7;
+  transition: width 0.3s ease;
+}
+
+.menu  > li a:hover::after {
+  width: 100%;
+}*/
+
+/* SOUS-MENU */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #f5f5f7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.submenu li a {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* AFFICHAGE AU SURVOL */
 .dropdown:hover .submenu {
   display: block;
 }
 
-/* Optionnel : effet hover pour sous-menu */
-.submenu li a:hover {
-  background: #555;
+/* Hover sous-menu */
+.submenu a:hover {
+  background: #0074b7;
+  color: #fff;
 }
 
 /* BOUTON */
@@ -247,15 +291,15 @@ small {
 /*responsive partie menu + bouton*/
 /* RESPONSIVE TABLETTE MENU HAMBURGER + BOUTON*/
 @media (max-width: 1024px) {
-  .nav-menu {
+  .menu {
     justify-content: space-around;
 
     gap: 30px;
   }
-  .navbar {
+  .nav {
     padding: 15px 40px;
   }
-  .nav-link {
+  .menu a {
     font-size: 12px;
   }
 }
@@ -273,19 +317,19 @@ small {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .navbar {
+  .nav {
     flex-direction: row;
     align-items: center;
   }
-  .navbar .btn {
+  .nav .btn {
     padding: 12px 13px;
     font-size: 0.8rem;
   }
-  .nav-menu {
+  .menu {
     position: absolute;
     bottom: 0;
     left: -100%;
-    top: 270px;
+    top: 290px;
     gap: 0;
     display: flex;
     justify-content: space-around;
@@ -298,10 +342,10 @@ small {
     transition: 0.3s;
     z-index: 1000;
   }
-  .nav-item {
+  .menu .nav-link {
     margin: 16px 0;
   }
-  .nav-menu.active {
+  .menu.active {
     left: 0;
   }
 }
