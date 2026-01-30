@@ -22,7 +22,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-  }),
+  })
 );
 
 /*menu hamburger
@@ -68,3 +68,27 @@ form.addEventListener("submit", (e) => {
   submitBtn.disabled = true;
   submitBtn.classList.remove("active");
 });
+
+/*page nettoyage de vitres
+
+const cards = document.querySelectorAll(".section-card");
+
+window.addEventListener("scroll", () => {
+  cards.forEach((card) => {
+    const pos = card.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 50) {
+      card.style.transform = "translateY(0)";
+      card.style.opacity = "1";
+    }
+  });
+});*/
+document
+  .querySelectorAll(".quote-form input, .quote-form textarea")
+  .forEach((el) => {
+    el.addEventListener("focus", () => {
+      el.style.boxShadow = "0 0 0 3px rgba(255,196,0,0.3)";
+    });
+    el.addEventListener("blur", () => {
+      el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
+    });
+  });

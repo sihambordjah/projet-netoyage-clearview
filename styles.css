@@ -981,33 +981,174 @@ textarea {
 /*========================  
   pages nettoyage vitres 
  =========================*/
-.service-hero {
-  background: #0a3d62;
-  color: white;
+.services-section {
   padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.services-section .container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+}
+
+/* TITRES */
+h2 {
+  color: #007c89;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+h3 {
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.service-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* LISTES */
+.check-list,
+.icon-list {
+  list-style: none;
+  padding: 0;
 }
 
-.service-section h2 {
+.check-list li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.check-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00a859;
+  font-weight: bold;
+}
+
+.icon-list li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.icon-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #007c89;
+}
+
+/* CARTES */
+.section-card {
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* CARTE SERVICES */
+.services-card {
+  background: #007c89;
+  color: white;
+}
+
+.services-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/*COLONNE DROITE */
+/* CARTE DEVIS */
+.quote-card {
+  background: #f9f9f9;
+  border-radius: 25px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* TITRE BOUTON JAUNE */
+.quote-title {
+  background: #ffc400;
+  color: #000;
+  text-align: center;
+  padding: 14px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+/* FORMULAIRE */
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.quote-form textarea {
+  border-radius: 20px;
+  min-height: 120px;
+  resize: none;
+}
+
+/* BOUTON */
+.quote-form button {
+  margin-top: 10px;
+  background: #ffc400;
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quote-form button:hover {
+  background: #ffb300;
+  transform: translateY(-2px);
+}
+
+/* CARTE CONTACT */
+.contact-card {
+  background: #f8f8f8;
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
   margin-bottom: 20px;
-  color: #0a3d62;
 }
 
-.service-section ul {
-  padding-left: 20px;
+.icon {
+  font-size: 22px;
 }
+/*.section-card {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}*/
 
-.service-cta {
-  background: #f1f1f1;
-  text-align: center;
-  padding: 60px 20px;
-}
+/* RESPONSIVE page nettoyage vitres
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}*/
 
 /*FOOTER*/
 .footer {
