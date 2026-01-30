@@ -355,7 +355,7 @@ small {
    HERO
 ===================== */
 .hero {
-  padding: 60px 9%;
+  padding: 80px 9%;
 }
 
 .hero-container {
@@ -367,8 +367,9 @@ small {
 
 .hero-image {
   position: relative;
-  width: 420px;
-  height: 420px;
+  height: 80%;
+  /*width: 420px;
+  height: 500px;*/
 }
 
 /* Image */
@@ -376,12 +377,12 @@ small {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 35px;
 }
 
 /* CONTENU */
 .hero-content {
-  max-width: 540px;
+  max-width: 550px;
 }
 
 .hero-content .title h1 {
@@ -626,7 +627,7 @@ services de nettoyage
     display: none;
   }
 }
-
+/*--partie carte chaque service--*/
 .targets-services {
   padding: 60px 20px;
   text-align: center;
@@ -649,7 +650,7 @@ services de nettoyage
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
+/*--- les carte ------*/
 .cards-services {
   display: flex;
   flex-wrap: wrap;
@@ -662,7 +663,7 @@ services de nettoyage
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  padding: 10px;
+  padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -673,24 +674,32 @@ services de nettoyage
 }
 
 .card-service .card-header {
+  background: #f3efff;
+  color: #3e8cdb;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f3efff;
-  color: #3e8cdb;
+
   padding: 15px 15px;
   margin-bottom: 20px;
-  border-radius: 16px;
-  font-weight: 600;
+  border-radius: 16px 16px 0 0;
 }
-
+.card-service .card-header span {
+  max-width: 90%;
+  font-size: 14px;
+}
+.card-service .card-header i {
+  font-size: 22px;
+}
 .card-service p {
   margin: 10px;
   font-size: 15px;
+  line-height: 1.6;
 }
 
 .card-service .arrow {
-  margin-left: auto;
+  margin-left: 10px;
   font-size: 18px;
 }
 
@@ -958,8 +967,7 @@ textarea {
 /*--------carte google maps-------*/
 .map-section {
   text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
+
   padding: 60px 0;
   background-color: #fff;
 }
