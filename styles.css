@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.5;
-  /*background-color: #eaf6fb;*/
+  background-color: #eaf6fb;
 }
 li {
   list-style: none;
@@ -30,7 +30,7 @@ a {
 }
 section {
   width: 100%;
-  background-color: #eaf6fb;
+  /*background-color: #eaf6fb;*/
 }
 section .container {
   max-width: 1200px;
@@ -635,7 +635,7 @@ services de nettoyage
 /* Titre micro-section */
 .services-subtitle {
   font-size: 22px;
-  color: #0074b7; /* violet principal */
+  color: #0074b7;
   font-weight: 600;
   margin: 40px 0 30px;
   position: relative;
@@ -645,8 +645,8 @@ services de nettoyage
   content: "";
   display: block;
   width: 60px;
-  height: 3px;
-  background-color: #6b4eff;
+  height: 2px;
+  background-color: #a56fc0; /* violet principal */
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -680,37 +680,32 @@ services de nettoyage
   display: flex;
   align-items: center;
   gap: 12px;
-
-  padding: 15px 15px;
+  padding: 20px 15px;
   margin-bottom: 20px;
   border-radius: 16px 16px 0 0;
 }
 .card-service .card-header span {
   max-width: 90%;
-  font-size: 14px;
+  font-size: 16px;
 }
 .card-service .card-header i {
   font-size: 22px;
 }
-.card-service p {
-  margin: 10px;
-  font-size: 15px;
-  line-height: 1.6;
-}
 
 .card-service .arrow {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.icon-service {
+/*.icon-service {
   width: 34px;
   height: 34px;
   color: #0074b7;
-}
+}*/
 
 .card-service p {
-  margin-top: 20px;
+  max-width: 90%;
+  margin: 10px;
   color: #555;
   line-height: 1.6;
   font-size: 15px;
@@ -733,7 +728,6 @@ services de nettoyage
   background-color: #0074b7; /* #3da1d6; au lieu d’un bleu plus foncé */
   border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   padding: 80px 0;
-  margin-bottom: 60px;
 }
 .testimonials .container {
   display: flex;
