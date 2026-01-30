@@ -978,6 +978,36 @@ textarea {
   border: 0;
   display: block;
 }
+/*========================  
+  pages nettoyage vitres 
+ =========================*/
+.service-hero {
+  background: #0a3d62;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.service-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.service-section h2 {
+  margin-bottom: 20px;
+  color: #0a3d62;
+}
+
+.service-section ul {
+  padding-left: 20px;
+}
+
+.service-cta {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 60px 20px;
+}
 
 /*FOOTER*/
 .footer {
