@@ -294,7 +294,6 @@ small {
 @media (max-width: 1024px) {
   .menu {
     justify-content: space-around;
-
     gap: 30px;
   }
   .nav {
@@ -330,7 +329,7 @@ small {
     position: absolute;
     bottom: 0;
     left: -100%;
-    top: 290px;
+    top: 275px;
     gap: 0;
     display: flex;
     justify-content: space-around;
@@ -348,6 +347,13 @@ small {
   }
   .menu.active {
     left: 0;
+  }
+  /* sous-menu */
+   .submenu {
+    position: static;
+  }
+  .dropdown:hover .submenu {
+    display: block;
   }
 }
 
