@@ -239,7 +239,10 @@
         <!--Partie Image-->
         <div class="hero-image">
           <!-- image -->
-          <img src="../images/services/hero-vitre.jpg" alt="Vitre" />
+          <img
+            src="../images/services/hero-vitre.jpg"
+            alt="nettoyage de vitres"
+          />
         </div>
 
         <!-- Partie Contenu -->
@@ -425,7 +428,7 @@
           <!-- CARTE CONTACT -->
           <div class="section-card contact-card">
             <div class="contact-item">
-              <span class="icon">📍</span>
+              <span class="icon"><i class="fa-solid fa-signs-post"></i></span>
               <div>
                 <strong>Zone d'intervention</strong>
                 <p>La Rochelle et ses Alentours</p>
@@ -433,7 +436,7 @@
             </div>
 
             <div class="contact-item">
-              <span class="icon">✉️</span>
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
               <div>
                 <strong>Email</strong>
                 <p>contact@clearviewnettoyage.fr</p>
@@ -441,7 +444,9 @@
             </div>
 
             <div class="contact-item">
-              <span class="icon">📞</span>
+              <span class="icon"
+                ><i class="fa-solid fa-blender-phone"></i
+              ></span>
               <div>
                 <strong>Appelez-nous</strong>
                 <p>07 71 86 33 56</p>
@@ -501,7 +506,7 @@
 
         <div class="why-list">
           <div class="why-item">
-            <div class="why-icon">🧼</div>
+            <div class="why-icon"><i class="fa-solid fa-people-group"></i></div>
             <div class="why-text">
               <h3>Techniciens qualifiés</h3>
               <p>
@@ -512,18 +517,18 @@
           </div>
 
           <div class="why-item">
-            <div class="why-icon">🌱</div>
+            <div class="why-icon"><i class="fa-solid fa-seedling"></i></div>
             <div class="why-text">
               <h3>Produits écologiques</h3>
               <p>
-                Des solutions respectueuses de l’environnement et de vos
+                Des solutions respectueuses de l'environnement et de vos
                 surfaces.
               </p>
             </div>
           </div>
 
           <div class="why-item">
-            <div class="why-icon">🕒</div>
+            <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
             <div class="why-text">
               <h3>Interventions flexibles</h3>
               <p>Nous nous adaptons à vos horaires et à vos besoins.</p>
@@ -531,7 +536,7 @@
           </div>
 
           <div class="why-item">
-            <div class="why-icon">⭐</div>
+            <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
             <div class="why-text">
               <h3>Service personnalisé</h3>
               <p>
@@ -539,6 +544,125 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================== 
+               formulaire de contact
+         ================================== -->
+    <section class="devis" id="contact">
+      <div class="container">
+        <div class="devis-container">
+          <!-- Colonne gauche -->
+          <div class="devis-info">
+            <p class="subtitle">Devis gratuit sous 24h !</p>
+            <h2>DEMANDER UN DEVIS</h2>
+
+            <div class="bloc-info">
+              <p>
+                Pour toute question ou pour l'étude de votre situation, notre
+                équipe est à votre écoute. Contactez-nous par téléphone ou via
+                le formulaire ci-contre.
+              </p>
+            </div>
+
+            <div class="bloc-info">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> 22 Rue des Tamaris,
+                17690 Angoulins
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:0148093369">07 71 86 33 56</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Colonne droite -->
+          <form class="devis-form" id="devisForm">
+            <div class="row">
+              <div class="field">
+                <label>Votre nom et prénom *</label>
+                <input
+                  type="text"
+                  name="nom"
+                  required
+                  autocomplete="name"
+                  placeholder="Ex : Jean Dupont"
+                />
+              </div>
+              <div class="field">
+                <label>Votre email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="Ex : exemple@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Votre numéro *</label>
+              <input
+                type="tel"
+                name="telephone"
+                required
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="Ex : 06 06 06 06 06"
+              />
+            </div>
+
+            <div class="field">
+              <label>Précisez votre demande *</label>
+              <textarea
+                name="message"
+                required
+                placeholder="Expliquez-nous votre besoin (type de nettoyage, surface, délai...)"
+              ></textarea>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="conditions" />
+              <label for="conditions">
+                En cochant cette case, je confirme avoir pris connaissance des
+                conditions d'utilisation
+              </label>
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn" disabled>
+              ENVOYER
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Séparateur -->
+    <section class="separator-section background-separator">
+      <span class="separator-line">
+        <span class="separator-dot"></span>
+      </span>
+    </section>
+
+    <!--Carte Google Maps-->
+    <section class="map-section">
+      <div class="container">
+        <h2>Nous trouver à La Rochelle</h2>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5532.050815588544!2d-1.11309281325602!3d46.11040069655444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480151e7aa7d73cd%3A0xd9260e8b8505bc0e!2s22%20Rue%20des%20Tamaris%2C%2017690%20Angoulins!5e0!3m2!1sfr!2sfr!4v1769688330930!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>

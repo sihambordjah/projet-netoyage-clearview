@@ -1147,11 +1147,18 @@ textarea {
 
 .contact-item {
   display: flex;
+
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.icon {
+.contact-item .icon {
+  width: 60px;
+  height: 60px;
+  background: #a56fc0;
+  font-size: 29px;
+}
+.contact-item strong {
   font-size: 22px;
 }
 
@@ -1366,7 +1373,6 @@ section pourquoi nous choisir
   background-color: #0074b7; /* #3da1d6; au lieu d’un bleu plus foncé */
   border-bottom: 4px solid rgba(255, 255, 255, 0.2);
   padding: 60px 0;
-  margin: 80px 0;
 }
 
 .why-section h2 {
@@ -1392,7 +1398,7 @@ section pourquoi nous choisir
   width: 100%;
   max-width: 900px;
   background: #f9fafb;
-  padding: 12px 20px;
+  padding: 10px 16px;
   border-radius: 999px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
   transition: 0.25s ease;
@@ -1405,10 +1411,11 @@ section pourquoi nous choisir
 
 /* Icône ronde */
 .why-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #a56fc0;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
