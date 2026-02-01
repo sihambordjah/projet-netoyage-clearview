@@ -587,24 +587,13 @@ a .stars {
 }
 
 /*  =================
-services de nettoyage
+    services de nettoyage
 ====================*/
-/*.services {
-  padding: 90px 20px;
-}*/
-
 .services-container {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/*.services,
-.map-section h2 {
-  font-size: 2rem;
-  color: #0074b7;
-  margin-bottom: 25px;
-}*/
 
 .services p {
   font-size: 1.06rem;
@@ -650,12 +639,6 @@ services de nettoyage
   padding: 60px 20px;
   text-align: center;
 }
-/* Titre micro-section */
-/*.services-subtitle {
-  font-weight: 600;
-  margin: 40px 0 30px;
-  position: relative;
-}*/
 
 .services-subtitle::after {
   content: "";
@@ -714,12 +697,6 @@ services de nettoyage
   margin-left: 10px;
   font-size: 20px;
 }
-
-/*.icon-service {
-  width: 34px;
-  height: 34px;
-  color: #0074b7;
-}*/
 
 .card-service p {
   max-width: 90%;
@@ -790,8 +767,11 @@ services de nettoyage
   border-radius: 12px 0 0 12px;
 }
 
-h3 {
+.card h4 {
   margin-top: 0;
+  font-size: 1.2rem;
+  color: #0074b7;
+  font-weight: 600;
 }
 .quote {
   color: #555;
@@ -917,13 +897,6 @@ textarea {
   font-size: 13px;
   margin-bottom: 30px;
 }
-/*boutton
-.devis-form button {
-  transition: 0.3s;
-}
-.devis-form button:hover {
-  transform: translateY(-2px);
-}*/
 
 /* Responsive */
 /*responsive tablette*/
@@ -994,8 +967,9 @@ textarea {
   border: 0;
   display: block;
 }
+
 /*========================  
-  pages nettoyage vitres 
+  Page Nettoyage vitres 
  =========================*/
 .services-section {
   margin: 60px 0;
@@ -1003,38 +977,23 @@ textarea {
 
 .services-section .container {
   display: grid;
-  grid-template-columns: 1.9fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 50px;
 }
 
-/* TITRES */
-/*h2 {
-  color: #007c89;
-  margin-top: 40px;
-  font-size: 28px;
-}
-
-h3 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-.left h2 {
-  font-size: 36px;
-}
-.left h3 {
-  font-size: 25px;
-}*/
-
+/*===-----COLONNE GAUCHE------===*/
+/*Description*/
 .intro {
   margin: 12px 0 25px;
   max-width: 680px;
 }
 
+/*Image*/
 .main-image {
-  width: 70%;
-  border-radius: 20px;
-  margin: 20px 0 30px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 25px auto;
+  max-width: 100%;
+  border-radius: 50px;
 }
 
 /* LISTES */
@@ -1070,47 +1029,196 @@ h3 {
   left: 0;
   color: #007c89;
 }
-
+/*===------- COLONNE DROITE ---------===*/
 /* CARTES */
 .section-card {
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 50px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
 }
 
-/* CARTE SERVICES 
-.services-card {
-  background: #007c89;
+/* CARTE DEVIS */
+.quote-card {
+  background: #f9f9f9;
+}
+
+/* TITRE BOUTON VIOLER */
+.quote-title {
+  background: #a56fc0;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FORMULAIRE */
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.quote-form input,
+.quote-form textarea {
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.quote-form textarea {
+  border-radius: 20px;
+  min-height: 120px;
+  resize: none;
+}
+
+/* BOUTON DEVIS*/
+.quote-form button {
+  font-size: 16px;
+  margin-top: 10px;
+  background: #a56fc0;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+.quote-form button:hover {
+  background: #8f58a5;
+  transform: translateY(-2px);
+}
+/*services carte*/
+.other-services-card {
+  background: #0074b7;
   color: white;
 }
 
-.services-card ul {
-  list-style: none;
-  padding: 0;
+.other-services-title {
+  background: white;
+  color: #111827;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-.services-card li {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}*/
-/* SERVICES CARD */
-.services-card {
-  background: #0891b2;
+.other-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.other-services-list a {
+  padding: 14px 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.other-services-list a:last-child {
+  border-bottom: none;
+}
+
+/* Icône flèche */
+.other-services-list a::before {
+  content: "➜";
+  font-size: 18px;
   color: white;
-  padding: 22px;
-  border-radius: 18px;
 }
 
-.services-card ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 12px;
+/* CARTE CONTACT */
+.contact-card {
+  background: #f8f8f8;
 }
 
-.services-card li {
-  margin-bottom: 10px;
+.contact-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
+.icon {
+  font-size: 22px;
+}
+
+/*Responsive tablette page service nettoyage-vitre*/
+@media (max-width: 1024px) {
+  .services-section .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/*Responsive mobile page service nettoyage-vitre*/
+@media (max-width: 768px) {
+  .services-section {
+    margin: 40px 0;
+  }
+
+  .services-section .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .right {
+    order: -1;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p,
+  li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .section-card {
+    padding: 22px;
+    border-radius: 25px;
+  }
+
+  .quote-title {
+    font-size: 17px;
+    padding: 12px;
+  }
+
+  .other-services-title {
+    font-size: 16px;
+  }
+
+  .quote-form button {
+    width: 100%;
+  }
+}
+
+/*==================
+ Section Pricing
+======================*/
 .pricing-section {
   margin-bottom: 60px;
 }
@@ -1144,16 +1252,16 @@ h3 {
 /* CARD */
 .price-card {
   background: white;
+  text-align: center;
   padding: 26px 24px;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease;
   border: 1px solid #eef2f7;
 }
-
 .price-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
 }
 
 /* TITLE */
@@ -1165,9 +1273,10 @@ h3 {
 
 /* PRICE TEXT */
 .price-text {
-  font-size: 21px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 900;
   color: #0284c7;
+  letter-spacing: 0.3px;
   margin-bottom: 6px;
 }
 
@@ -1179,107 +1288,77 @@ h3 {
 
 /* HIGHLIGHT CARD */
 .price-card.highlight {
-  border: 2px solid #facc15;
+  border: 2px solid #a56fc0;
   background: linear-gradient(180deg, #fffdf3, #ffffff);
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 /* BONUS NOTE */
 .bonus-note {
-  margin: 35px 0;
+  margin-top: 35px;
   font-weight: 600;
   color: #0284c7;
   text-align: center;
 }
-
-/*COLONNE DROITE */
-/* CARTE DEVIS */
-.quote-card {
-  background: #f9f9f9;
-  border-radius: 25px;
-  padding: 35px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-/* TITRE BOUTON JAUNE */
-.quote-title {
-  background: #a56fc0;
-  color: #fff;
+.pricing-cta {
   text-align: center;
-  padding: 14px;
-  border-radius: 50px;
-  margin-bottom: 25px;
-  font-size: 18px;
+  margin-top: 30px;
 }
 
-/* FORMULAIRE */
-.quote-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+/* ==================
+   RESPONSIVE PRICING
+================== */
 
-.quote-form input,
-.quote-form textarea {
-  border: none;
-  padding: 16px;
-  border-radius: 50px;
-  background: white;
-  font-size: 14px;
-  outline: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.quote-form textarea {
-  border-radius: 20px;
-  min-height: 120px;
-  resize: none;
-}
-
-/* BOUTON */
-.quote-form button {
-  margin-top: 10px;
-  background: #a56fc0;
-  border: none;
-  padding: 16px;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.quote-form button:hover {
-  background: #8f58a5;
-  transform: translateY(-2px);
-}
-
-/* CARTE CONTACT */
-.contact-card {
-  background: #f8f8f8;
-}
-
-.contact-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.icon {
-  font-size: 22px;
-}
-/*.section-card {
-  transform: translateY(40px);
-  opacity: 0;
-  transition: all 0.6s ease;
-}*/
-
-/* RESPONSIVE page nettoyage vitres
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
+/* TABLETTE */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    gap: 18px;
   }
-}*/
+
+  .price-card {
+    padding: 22px;
+  }
+
+  .pricing-section h2 {
+    font-size: 24px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pricing-section {
+    margin-bottom: 40px;
+  }
+  .pricing-section h2 {
+    font-size: 26px;
+  }
+  .pricing-note {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .price-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .price-card h3 {
+    font-size: 17px;
+  }
+
+  .price-text {
+    font-size: 18px;
+  }
+
+  .bonus-note {
+    font-size: 14px;
+  }
+}
 
 /*FOOTER*/
 .footer {
