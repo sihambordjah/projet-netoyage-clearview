@@ -1021,6 +1021,9 @@ textarea {
   left: 0;
   color: #007c89;
 }
+.btn-colonne-left {
+  margin-top: 40px;
+}
 /*===------- COLONNE DROITE ---------===*/
 /* CARTES */
 .section-card {
@@ -1299,10 +1302,11 @@ textarea {
   color: #0284c7;
   text-align: center;
 }
+/*
 .pricing-cta {
   text-align: center;
   margin-top: 30px;
-}
+}*/
 
 /* ==================
    RESPONSIVE PRICING
@@ -1444,6 +1448,35 @@ section pourquoi nous choisir
     font-size: 24px;
   }
 }
+
+/*========================  
+  Page Nettoyage fin chantier 
+ =========================*/
+/*bouton colonne left
+.left .btn-cta {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.left .btn-cta .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .left .btn-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left .btn-cta .btn {
+    width: 100%;
+  }
+}*/
 
 /*FOOTER*/
 .footer {
