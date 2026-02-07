@@ -167,7 +167,17 @@ small {
 /* Partie Menu + bouton */
 .header-menu {
   background: #f5f5f7;
-} /*
+  transition: all 0.25s ease;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #f5f5f7;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 /* NAV GLOBAL */
 .nav {
@@ -265,7 +275,7 @@ small {
   display: inline-block;
   background: #a56fc0;
   color: #fff;
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
@@ -657,7 +667,9 @@ a .stars {
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 5px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -1302,11 +1314,10 @@ textarea {
   color: #0284c7;
   text-align: center;
 }
-/*
 .pricing-cta {
   text-align: center;
-  margin-top: 30px;
-}*/
+  margin-top: 45px;
+}
 
 /* ==================
    RESPONSIVE PRICING
@@ -1528,7 +1539,9 @@ section pourquoi nous choisir
   line-height: 1.6;
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .footer-block .links a:hover {
@@ -1554,7 +1567,9 @@ section pourquoi nous choisir
   text-decoration: none;
   font-weight: bold;
   width: fit-content;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 

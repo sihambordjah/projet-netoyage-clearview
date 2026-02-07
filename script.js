@@ -22,7 +22,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-  })
+  }),
 );
 
 /*menu hamburger
@@ -92,3 +92,14 @@ document
       el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
     });
   });
+
+//fixer le menu au scroll
+window.addEventListener("scroll", function () {
+  const menu = document.querySelector(".header-menu");
+
+  if (window.scrollY > 100) {
+    menu.classList.add("fixed-menu");
+  } else {
+    menu.classList.remove("fixed-menu");
+  }
+});
