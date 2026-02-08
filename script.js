@@ -51,23 +51,18 @@ const checkbox = document.getElementById("conditions");
 const submitBtn = document.getElementById("submitBtn");
 const form = document.getElementById("devisForm");
 
+// Active / désactive le bouton
 checkbox.addEventListener("change", () => {
-  if (checkbox.checked) {
-    submitBtn.disabled = false;
-    submitBtn.classList.add("active");
-  } else {
-    submitBtn.disabled = true;
-    submitBtn.classList.remove("active");
-  }
+  submitBtn.disabled = !checkbox.checked;
+  submitBtn.classList.toggle("active", checkbox.checked);
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Votre demande de devis a bien été envoyée !");
-  form.reset();
+// Message UX sans bloquer Netlify
+form.addEventListener("submit", () => {
   submitBtn.disabled = true;
-  submitBtn.classList.remove("active");
+  submitBtn.textContent = "Envoi en cours...";
 });
+
 
 /*page nettoyage de vitres
 

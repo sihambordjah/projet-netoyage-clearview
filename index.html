@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <!-- =========================
@@ -587,7 +587,15 @@
           </div>
 
           <!-- Colonne droite -->
-          <form class="devis-form" id="devisForm">
+          <form
+            class="devis-form"
+            id="devisForm"
+            name="devis"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="devis" />
+
             <div class="row">
               <div class="field">
                 <label>Votre nom et prénom *</label>
@@ -599,6 +607,7 @@
                   placeholder="Ex : Jean Dupont"
                 />
               </div>
+
               <div class="field">
                 <label>Votre email *</label>
                 <input
@@ -633,7 +642,13 @@
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" id="conditions" />
+              <input
+                type="checkbox"
+                id="conditions"
+                name="conditions"
+                required
+              />
+
               <label for="conditions">
                 En cochant cette case, je confirme avoir pris connaissance des
                 conditions d'utilisation
