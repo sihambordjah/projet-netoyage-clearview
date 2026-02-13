@@ -22,7 +22,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-  }),
+  })
 );
 
 /*menu hamburger
@@ -45,44 +45,38 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
     navMenu.classList.remove("active");
   });
 });*/
+/*==Formulaire de contact== */
+/** Gestion des formulaires */
 
-/**Formulaire de contact */
-const checkbox = document.getElementById("conditions");
-const submitBtn = document.getElementById("submitBtn");
-const form = document.getElementById("devisForm");
+document.querySelectorAll("form").forEach((form) => {
+  const checkbox = form.querySelector("#conditions");
+  const submitBtn = form.querySelector("button[type='submit']");
 
-// Active / désactive le bouton
-checkbox.addEventListener("change", () => {
-  submitBtn.disabled = !checkbox.checked;
-  submitBtn.classList.toggle("active", checkbox.checked);
+  // Gestion checkbox si elle existe
+  if (checkbox && submitBtn) {
+    checkbox.addEventListener("change", () => {
+      submitBtn.disabled = !checkbox.checked;
+      submitBtn.classList.toggle("active", checkbox.checked);
+    });
+  }
+
+  // Message UX au submit
+  if (submitBtn) {
+    form.addEventListener("submit", () => {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Envoi en cours...";
+    });
+  }
 });
 
-// Message UX sans bloquer Netlify
-form.addEventListener("submit", () => {
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Envoi en cours...";
-});
-
-
-/*page nettoyage de vitres
-
-const cards = document.querySelectorAll(".section-card");
-
-window.addEventListener("scroll", () => {
-  cards.forEach((card) => {
-    const pos = card.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 50) {
-      card.style.transform = "translateY(0)";
-      card.style.opacity = "1";
-    }
-  });
-});*/
+/** Effet focus sur les champs */
 document
   .querySelectorAll(".quote-form input, .quote-form textarea")
   .forEach((el) => {
     el.addEventListener("focus", () => {
       el.style.boxShadow = "0 0 0 3px rgba(255,196,0,0.3)";
     });
+
     el.addEventListener("blur", () => {
       el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
     });
