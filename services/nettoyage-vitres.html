@@ -426,9 +426,18 @@
               method="POST"
               data-netlify="true"
             >
-              <input type="text" placeholder="Votre Nom*" required />
-              <input type="email" placeholder="Votre E-mail*" required />
-              <input type="tel" placeholder="Numéro de téléphone" />
+              <input type="text" name="nom" placeholder="Votre Nom*" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre E-mail*"
+                required
+              />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Numéro de téléphone"
+              />
               <textarea placeholder="Entrez votre message"></textarea>
 
               <button type="submit">Obtenez un devis</button>
