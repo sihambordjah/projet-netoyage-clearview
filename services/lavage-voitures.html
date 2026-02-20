@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <head>
@@ -366,13 +366,30 @@
           <div class="section-card quote-card">
             <h3 class="quote-title">Obtenez un devis gratuit</h3>
 
-            <form class="quote-form">
-              <input type="text" placeholder="Votre Nom*" required />
-              <input type="email" placeholder="Votre E-mail*" required />
-              <input type="tel" placeholder="Téléphone" />
-              <textarea placeholder="Type de véhicule & demande"></textarea>
+            <form
+              class="quote-form"
+              name="devis-rapide"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="text" name="nom" placeholder="Votre Nom*" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre E-mail*"
+                required
+              />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Numéro de téléphone"
+              />
+              <textarea
+                name="message"
+                placeholder="Entrez votre message"
+              ></textarea>
 
-              <button type="submit">Obtenir un devis</button>
+              <button type="submit">Obtenez un devis</button>
             </form>
           </div>
 
