@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://clearview-nettoyage.fr/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://clearview-nettoyage.fr/services/nettoyage-vitres</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://clearview-nettoyage.fr/services/nettoyage-fin-chantier</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://clearview-nettoyage.fr/services/nettoyage-textiles</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://clearview-nettoyage.fr/services/locations-saisonnieres</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://clearview-nettoyage.fr/services/nettoyage-mobil-home</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://clearview-nettoyage.fr/services/nettoyage-exterieur</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://clearview-nettoyage.fr/services/lavage-voitures</loc>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://clearview-nettoyage.fr/services/menage-generale</loc>
+    <priority>0.6</priority>
+  </url>
+
+     <url>
+    <loc>https://clearview-nettoyage.fr/services/location-materiel</loc>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
