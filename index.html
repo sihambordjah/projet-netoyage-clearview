@@ -659,11 +659,11 @@
           <form
             class="devis-form"
             id="devisForm"
-            name="devis"
+            name="devis-contact"
             method="POST"
             data-netlify="true"
           >
-            <input type="hidden" name="form-name" value="devis" />
+            <input type="hidden" name="form-name" value="devis-contact" />
 
             <div class="row">
               <div class="field">
@@ -711,7 +711,12 @@
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" required data-netlify-ignore="true" />
+              <input
+                type="checkbox"
+                id="conditions"
+                name="conditions"
+                required
+              />
 
               <!--<label for="conditions">
                 En cochant cette case, je confirme avoir pris connaissance des
