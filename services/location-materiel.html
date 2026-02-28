@@ -626,7 +626,7 @@
               </p>
               <p>
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:0148093369">07 71 86 33 56</a>
+                <a href="tel:07 71 86 33 56">07 71 86 33 56</a>
               </p>
               <p>
                 <i class="fa-solid fa-envelope-circle-check"></i>
@@ -638,7 +638,15 @@
           </div>
 
           <!-- Colonne droite -->
-          <form class="devis-form" id="devisForm">
+          <form
+            class="devis-form"
+            id="devisForm"
+            name="devis-contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="devis-contact" />
+
             <div class="row">
               <div class="field">
                 <label>Votre nom et prénom *</label>
@@ -650,6 +658,7 @@
                   placeholder="Ex : Jean Dupont"
                 />
               </div>
+
               <div class="field">
                 <label>Votre email *</label>
                 <input
@@ -684,8 +693,8 @@
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" id="conditions" />
-              <label for="conditions">
+              <input type="checkbox" id="conditions" required />
+              <label>
                 En cochant cette case, je confirme avoir pris connaissance des
                 conditions d'utilisation
               </label>
@@ -731,7 +740,10 @@
         <div class="footer-container">
           <!-- Logo -->
           <div class="footer-logo">
-            <img src="../images/logo/logo-clearview.webp" alt="City Clean" />
+            <img
+              src="images/logo/logo-clearview.webp"
+              alt="logo footer clearview"
+            />
             <!-- Adresse -->
             <div class="footer-text">
               <h4>Adresse</h4>
@@ -746,11 +758,19 @@
           <div class="footer-block">
             <h4>Services</h4>
             <div class="links">
-              <a href="" class="link">Nettoyage de vitres</a>
-              <a href="">Nettoyage de fin de chantier</a>
-              <a href="">Nettoyage et ménage des locations saisonnières</a>
-              <a href="">Nettoyage des matelas, canapé et moquette</a>
-              <a href="">Nettoyage des mobile homes</a>
+              <a href="./services/nettoyage-vitres.html">Nettoyage de vitres</a>
+              <a href="./services/nettoyage-fin-chantier.html"
+                >Nettoyage fin de chantier</a
+              >
+              <a href="./services/locations-saisonnieres.html"
+                >Locations saisonnières</a
+              >
+              <a href="./services/nettoyage-textiles.html"
+                >Nettoyage textiles</a
+              >
+              <a href="./services/nettoyage-mobil-home.html"
+                >Nettoyage mobil-homes</a
+              >
             </div>
           </div>
 
@@ -759,10 +779,11 @@
             <h4>Contact</h4>
             <p>
               Email :
-              <a href="mailto:contact@clearview.com" class="email-link"
-                >contact@clearview.com</a
+              <a href="mailto:contact@clearview-nettoyage.fr" class="email-link"
+                >contact@clearview-nettoyage.fr</a
               >
             </p>
+
             <p>
               Téléphone :
               <a href="tel:07 71 86 33 56" class="phone-link">07 71 86 33 56</a>
