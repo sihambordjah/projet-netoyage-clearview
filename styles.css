@@ -395,8 +395,6 @@ small {
 .hero-image {
   position: relative;
   height: 80%;
-  /*width: 420px;
-  height: 500px;*/
 }
 
 /* Image */
@@ -1526,6 +1524,96 @@ section pourquoi nous choisir
     width: 100%;
   }
 }*/
+/*========================  
+  Page Contact / Devis 
+ =========================*/
+.hero-contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-contact h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-contact h2 {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-contact .subtitle {
+  margin-bottom: 15px;
+}
+
+.hero-contact .text {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.hero-contact-cta {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/*responsive tablette page Contact/Devis*/
+@media (max-width: 1024px) {
+  .hero-contact {
+    padding: 60px 25px;
+  }
+
+  .hero-contact h1 {
+    font-size: 2rem;
+  }
+
+  .hero-contact h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-contact .text {
+    font-size: 0.95rem;
+  }
+}
+/*responsive mobile*/
+@media (max-width: 768px) {
+  .hero-contact {
+    padding: 45px 18px;
+    text-align: center;
+  }
+
+  .hero-contact h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero-contact h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-contact .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-contact .text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .hero-contact-cta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-contact-cta .btn {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
 
 /*FOOTER*/
 .footer {
