@@ -375,15 +375,33 @@
 
         <!-- RIGHT -->
         <div class="right">
-          <!-- QUOTE -->
+          <!-- CARTE DEVIS -->
           <div class="section-card quote-card">
             <h3 class="quote-title">Réserver du matériel</h3>
 
-            <form class="quote-form">
-              <input type="text" placeholder="Votre Nom*" required />
-              <input type="email" placeholder="Votre E-mail*" required />
-              <input type="tel" placeholder="Téléphone" />
-              <textarea placeholder="Matériel souhaité + dates"></textarea>
+            <form
+              class="quote-form"
+              name="devis-rapide"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="text" name="nom" placeholder="Votre Nom*" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre E-mail*"
+                required
+              />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Numéro de téléphone"
+              />
+              <textarea
+                name="message"
+                placeholder="Matériel souhaité + dates"
+              ></textarea>
+
               <button type="submit">Réserver</button>
             </form>
           </div>
