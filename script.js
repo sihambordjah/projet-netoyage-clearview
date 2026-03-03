@@ -25,6 +25,17 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
+//fixer le menu au scroll
+window.addEventListener("scroll", function () {
+  const menu = document.querySelector(".header-menu");
+
+  if (window.scrollY > 100) {
+    menu.classList.add("fixed-menu");
+  } else {
+    menu.classList.remove("fixed-menu");
+  }
+});
+
 /*menu hamburger
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
@@ -45,9 +56,9 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
     navMenu.classList.remove("active");
   });
 });*/
+
 /*==Formulaire de contact== */
 /** Gestion des formulaires */
-
 document.querySelectorAll("form").forEach((form) => {
   const checkbox = form.querySelector("#conditions");
   const submitBtn = form.querySelector("button[type='submit']");
@@ -60,14 +71,42 @@ document.querySelectorAll("form").forEach((form) => {
     });
   }
 
+  /**j'ai changé ca   */
+
   // Message UX au submit
   if (submitBtn) {
-    form.addEventListener("submit", () => {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // 🔥 BLOQUE la redirection
+
       submitBtn.disabled = true;
       submitBtn.textContent = "Envoi en cours...";
+
+      const formData = new FormData(form);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          submitBtn.textContent = "Envoyé ✔";
+
+          const message = form.previousElementSibling;
+          if (message && message.classList.contains("form-message")) {
+            message.style.display = "block";
+          }
+
+          form.reset();
+        })
+        .catch(() => {
+          submitBtn.textContent = "Erreur, réessayez";
+          submitBtn.disabled = false;
+        });
     });
   }
 });
+
+/**fin de bloc j'ai changé ca   */
 
 /** Effet focus sur les champs */
 document
@@ -81,14 +120,3 @@ document
       el.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
     });
   });
-
-//fixer le menu au scroll
-window.addEventListener("scroll", function () {
-  const menu = document.querySelector(".header-menu");
-
-  if (window.scrollY > 100) {
-    menu.classList.add("fixed-menu");
-  } else {
-    menu.classList.remove("fixed-menu");
-  }
-});

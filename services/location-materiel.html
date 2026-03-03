@@ -380,11 +380,14 @@
             <h3 class="quote-title">Réserver du matériel</h3>
 
             <form
+              id="quoteForm"
               class="quote-form"
               name="devis-rapide"
               method="POST"
               data-netlify="true"
             >
+              <input type="hidden" name="form-name" value="devis-rapide" />
+
               <input type="text" name="nom" placeholder="Votre Nom*" required />
               <input
                 type="email"
@@ -403,6 +406,11 @@
               ></textarea>
 
               <button type="submit">Réserver</button>
+
+              <div class="form-message" style="display: none">
+                ✔ Merci d'avoir rempli le formulaire ! Nous vous contacterons
+                prochainement.
+              </div>
             </form>
           </div>
 
