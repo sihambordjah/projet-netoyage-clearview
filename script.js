@@ -75,33 +75,9 @@ document.querySelectorAll("form").forEach((form) => {
 
   // Message UX au submit
   if (submitBtn) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // 🔥 BLOQUE la redirection
-
+    form.addEventListener("submit", () => {
       submitBtn.disabled = true;
       submitBtn.textContent = "Envoi en cours...";
-
-      const formData = new FormData(form);
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => {
-          submitBtn.textContent = "Envoyé ✔";
-
-          const message = form.previousElementSibling;
-          if (message && message.classList.contains("form-message")) {
-            message.style.display = "block";
-          }
-
-          form.reset();
-        })
-        .catch(() => {
-          submitBtn.textContent = "Erreur, réessayez";
-          submitBtn.disabled = false;
-        });
     });
   }
 });
