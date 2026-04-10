@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <!-- =========================
@@ -296,8 +296,8 @@
         <div class="hero-content">
           <div class="title">
             <h1>
-              Entreprise de nettoyage pour particuliers & professionnel à La Rochelle et ses
-              alentours
+              Entreprise de nettoyage pour particuliers & professionnel à La
+              Rochelle et ses alentours
             </h1>
             <h2>
               Nettoyage de maisons, appartements et vitres à La Rochelle pour un
@@ -692,6 +692,63 @@
           <form
             class="devis-form"
             id="devisForm"
+            action="https://formspree.io/f/xdaprdyg"
+            method="POST"
+          >
+            <div class="row">
+              <div class="field">
+                <label>Votre nom et prénom *</label>
+                <input
+                  type="text"
+                  name="nom"
+                  required
+                  placeholder="Ex : Jean Dupont"
+                />
+              </div>
+
+              <div class="field">
+                <label>Votre email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Ex : exemple@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Votre numéro *</label>
+              <input
+                type="tel"
+                name="telephone"
+                required
+                placeholder="Ex : 06 06 06 06 06"
+              />
+            </div>
+
+            <div class="field">
+              <label>Précisez votre demande *</label>
+              <textarea
+                name="message"
+                required
+                placeholder="Expliquez-nous votre besoin..."
+              ></textarea>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="conditions" required />
+              <label>
+                En cochant cette case, je confirme avoir pris connaissance des
+                conditions d'utilisation
+              </label>
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn">ENVOYER</button>
+          </form>
+          <!--<form
+            class="devis-form"
+            id="devisForm"
             name="devis-contact"
             method="POST"
             data-netlify="true"
@@ -754,7 +811,67 @@
             <button type="submit" class="btn" id="submitBtn" disabled>
               ENVOYER
             </button>
-          </form>
+          </form>--<form
+  class="devis-form"
+  id="devisForm"
+  action="https://formspree.io/f/xdaprdyg"
+  method="POST"
+>
+
+  <div class="row">
+    <div class="field">
+      <label>Votre nom et prénom *</label>
+      <input
+        type="text"
+        name="nom"
+        required
+        placeholder="Ex : Jean Dupont"
+      />
+    </div>
+
+    <div class="field">
+      <label>Votre email *</label>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Ex : exemple@email.com"
+      />
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Votre numéro *</label>
+    <input
+      type="tel"
+      name="telephone"
+      required
+      placeholder="Ex : 06 06 06 06 06"
+    />
+  </div>
+
+  <div class="field">
+    <label>Précisez votre demande *</label>
+    <textarea
+      name="message"
+      required
+      placeholder="Expliquez-nous votre besoin..."
+    ></textarea>
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="conditions" required />
+    <label>
+      En cochant cette case, je confirme avoir pris connaissance des
+      conditions d'utilisation
+    </label>
+  </div>
+
+  <button type="submit" class="btn" id="submitBtn">
+    ENVOYER
+  </button>
+
+</form>-->
         </div>
       </div>
     </section>

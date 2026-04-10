@@ -401,30 +401,36 @@
             <h3 class="quote-title">Réserver du matériel</h3>
 
             <form
-              class="quote-form"
-              name="devis-rapide"
-              method="POST"
-              data-netlify="true"
-            >
-              <input type="text" name="nom" placeholder="Votre Nom*" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Votre E-mail*"
-                required
-              />
-              <input
-                type="tel"
-                name="telephone"
-                placeholder="Numéro de téléphone"
-              />
-              <textarea
-                name="message"
-                placeholder="Matériel souhaité + dates"
-              ></textarea>
+  class="quote-form"
+  action="https://formspree.io/f/xdaprdyg"
+  method="POST"
+>
 
-              <button type="submit">Réserver</button>
-            </form>
+  <input type="hidden" name="source" value="Page Service" />
+
+  <input type="text" name="nom" placeholder="Votre Nom*" required />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre E-mail*"
+    required
+  />
+
+  <input
+    type="tel"
+    name="telephone"
+    placeholder="Numéro de téléphone"
+  />
+
+  <textarea
+    name="message"
+    placeholder="Entrez votre message"
+  ></textarea>
+
+  <button type="submit">Obtenez un devis</button>
+
+</form>
           </div>
 
           <!-- OTHER SERVICES -->
@@ -608,12 +614,9 @@
           <form
             class="devis-form"
             id="devisForm"
-            name="devis-contact"
+            action="https://formspree.io/f/xdaprdyg"
             method="POST"
-            data-netlify="true"
           >
-            <input type="hidden" name="form-name" value="devis-contact" />
-
             <div class="row">
               <div class="field">
                 <label>Votre nom et prénom *</label>
@@ -621,7 +624,6 @@
                   type="text"
                   name="nom"
                   required
-                  autocomplete="name"
                   placeholder="Ex : Jean Dupont"
                 />
               </div>
@@ -632,7 +634,6 @@
                   type="email"
                   name="email"
                   required
-                  autocomplete="email"
                   placeholder="Ex : exemple@email.com"
                 />
               </div>
@@ -644,8 +645,6 @@
                 type="tel"
                 name="telephone"
                 required
-                inputmode="tel"
-                autocomplete="tel"
                 placeholder="Ex : 06 06 06 06 06"
               />
             </div>
@@ -655,7 +654,7 @@
               <textarea
                 name="message"
                 required
-                placeholder="Expliquez-nous votre besoin (type de nettoyage, surface, délai...)"
+                placeholder="Expliquez-nous votre besoin..."
               ></textarea>
             </div>
 
@@ -667,9 +666,7 @@
               </label>
             </div>
 
-            <button type="submit" class="btn" id="submitBtn" disabled>
-              ENVOYER
-            </button>
+            <button type="submit" class="btn" id="submitBtn">ENVOYER</button>
           </form>
         </div>
       </div>
